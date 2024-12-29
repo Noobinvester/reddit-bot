@@ -65,6 +65,7 @@ def save_replied_comment(comment_id):
     except Exception as e:
         logging.error(f"Error saving replied comment: {e}")
 # IMPORTANT here is where you will need to edit the sub reddit you are tyring to use this put in and what you want the bot to say
+# in this example the bot is being use in sub reddit "TEST" and is looking for the word "dog" and is replying with "Did someone say dog? 🐶"
 def run_bot(r, replied_comments):
     """Run the bot, checking for new comments and handling rate limits."""
     try:
